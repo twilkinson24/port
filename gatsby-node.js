@@ -78,7 +78,7 @@ const createIndividualBlogPostPages = async ({ posts, gatsbyUtilities }) =>
         path: page.isFrontPage ? '/' : page.uri,
 
         // use the blog page template as the page component
-        component: page?.isFrontPage ? path.resolve(`./src/templates/landing-page.js`) : path.resolve(`./src/templates/page.js`),
+        component: page.isFrontPage ? path.resolve(`./src/templates/landing-page.js`) : path.resolve(`./src/templates/page.js`),
 
         // `context` is available in the template as a prop and
         // as a variable in GraphQL.
