@@ -64,7 +64,6 @@ const createIndividualBlogPostPages = async ({ posts, gatsbyUtilities }) =>
 
 
 
-
   /*
   * Pages
   */

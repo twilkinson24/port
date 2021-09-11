@@ -17,6 +17,9 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+  siteMetadata: {
+    title: `Taylor Wilkinson`,
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-use-dark-mode',
