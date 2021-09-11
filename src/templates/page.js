@@ -38,18 +38,16 @@ const pageTemplate = ({ data: {  page } }) => {
         <header>
           <h1 itemProp="headline">{parse(page.title)}</h1>
           
-          {console.log('PAGE')}
-
           <p>{page.date}</p>
 
           {/* if we have a featured image for this post let's display it */}
-          {featuredImage?.fluid && (
+          {/* featuredImage?.fluid && (
             <Image
               fluid={featuredImage.fluid}
               alt={featuredImage.alt}
               style={{ marginBottom: 50 }}
             />
-          )}
+          ) */}
         </header>
 
         {!!page.content && (
