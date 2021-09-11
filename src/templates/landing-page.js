@@ -52,6 +52,7 @@ export const pageQuery = graphql`
       id
       content
       title
+      isFrontPage
 
       featuredImage {
         node {

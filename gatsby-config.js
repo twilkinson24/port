@@ -19,6 +19,7 @@ module.exports = {
    */
   siteMetadata: {
     title: `Taylor Wilkinson`,
+    siteUrl: 'https://twilkinson.com/'
   },
   plugins: [
     {
@@ -76,7 +77,7 @@ module.exports = {
      */
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
+    `gatsby-plugin-sitemap`,
     {
       // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
       resolve: `gatsby-plugin-manifest`,
