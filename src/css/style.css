@@ -978,6 +978,7 @@ footer.primary-footer .social-media-icons li a:after {
     flex: 0 0 30% !important;
   }
 
+
   /* nav */
   nav.primary-menu.active ul.primary-menu-items  {
     flex-direction: column;
@@ -1053,6 +1054,7 @@ footer.primary-footer .social-media-icons li a:after {
   .about-page-columns {
     flex-direction: column-reverse;
   }
+  .wp-block-column,
   .about-page-columns .wp-block-columns,
   .about-page-columns img {
     max-width: 100%;
