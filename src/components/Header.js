@@ -1,9 +1,10 @@
 import React, {useState} from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import parse from "html-react-parser"
 import DarkModeToggle from "../utils/DarkModeToggle"
+import { some } from "lodash"
 
 const SiteHeader = () => {
   const {
@@ -54,7 +55,8 @@ const SiteHeader = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNavMenu = () => setNavOpen(prevNavOpen => !prevNavOpen);
-
+  console.log('tw logo  ')
+  console.log(twLogo)
 
   return (
     <header className="global-header">
@@ -103,8 +105,9 @@ const SiteHeader = () => {
         <Link to="/" className="header-logo-link">
           <GatsbyImage 
             image={logoImage} 
-            alt="A dinosaur" 
+            alt={title} 
             className="header-logo-img"
+            src="taylor-wilkinson-logo-orange-trans-bg.png"
           />
           <h1 className="m0 sr-only">
             {parse(title)}

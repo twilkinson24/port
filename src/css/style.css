@@ -421,8 +421,10 @@ img {
 .site-title {
   transform: translateY(28%);
 }
-.site-title .header-logo-img {
-  max-width: 70px;
+.site-title .header-logo-img,
+.site-title .header-logo-img img {
+  opacity: 1 !important;
+  max-width: 100px;
   width: 20vw;
 }
 .primary-menu,
@@ -434,6 +436,7 @@ img {
 .dark-mode-toggle {
   text-align: right;
 }
+
 /*
   Nav Menu
 */
@@ -913,6 +916,10 @@ footer.primary-footer .social-media-icons li a:after {
   opacity: 1;
   animation: fadeToWhite .3s forwards;
 }
+
+.dark-mode .dark-mode-toggle button {
+  color: var(--color-accent);
+}
 /*
 * End Dark Mode 
 */
@@ -1023,6 +1030,7 @@ footer.primary-footer .social-media-icons li a:after {
     order: 1;
   }
   .global-header .dark-mode-toggle {
+    color: var(--color-text);
     flex: 0 0 50px;
     margin: 0 5% 0 auto;
     min-width: 50px;

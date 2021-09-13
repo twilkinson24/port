@@ -19,7 +19,7 @@ module.exports = {
    */
   siteMetadata: {
     title: `Taylor Wilkinson`,
-    siteUrl: 'https://twilkinson.com/'
+    siteUrl: 'https://twilkinson.com'
   },
   plugins: [
     {

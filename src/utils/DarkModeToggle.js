@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
 
   return (
     <div className="dark-mode-toggle">
-      {darkMode.value ? <button type="button" onClick={darkMode.disable} className="txt-light">
+      {darkMode.value ? <button type="button" onClick={darkMode.disable}>
         <span className="sr-only">change to</span> light <span className="desktop-only">mode</span> <span className="sun" />
       </button> 
       :
