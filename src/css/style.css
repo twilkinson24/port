@@ -656,7 +656,10 @@ a.no-decoration:hover:after {
   transform: translateX(100%);
   visibility: visible;
 }
-
+.txt-h4 {
+  font-size: var(--fontSize-3);
+  font-weight: 900;
+}
 .flex {
   display: flex;
 }
