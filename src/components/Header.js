@@ -55,8 +55,6 @@ const SiteHeader = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const toggleNavMenu = () => setNavOpen(prevNavOpen => !prevNavOpen);
-  console.log('tw logo  ')
-  console.log(twLogo)
 
   return (
     <header className="global-header">

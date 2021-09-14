@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ title, canonical, description, image, lang, meta, isBlogPost = false }) => {
-  const { wp, wpUser } = useStaticQuery(
+  const { wp, wpUser, twImage } = useStaticQuery(
     graphql`
       query {
         # if there's more than one user this would need to be filtered to the main user
@@ -20,6 +20,9 @@ const Seo = ({ title, canonical, description, image, lang, meta, isBlogPost = fa
               twitter
             }
           }
+        }
+        twImage: file(relativePath: { eq: "TaylorWilkinsonWebDeveloper-smm.jpg" }) {
+          publicURL
         }
       }
     `
@@ -47,6 +50,10 @@ const Seo = ({ title, canonical, description, image, lang, meta, isBlogPost = fa
         {
           property: `og:description`,
           content: description,
+        },
+        {
+          property: `og:image`,
+          content: window.location.host + twImage.publicURL,
         },
         {
           property: `og:type`,
