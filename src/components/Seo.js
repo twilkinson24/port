@@ -84,6 +84,10 @@ const Seo = ({ title, canonical, description, image, lang, meta, isBlogPost = fa
           name: `twitter:description`,
           content: description,
         },
+        {
+          property: `twitter:image`,
+          content: allSite?.edges[0]?.node?.siteMetadata.siteUrl ? (allSite.edges[0].node.siteMetadata.siteUrl + twImage.publicURL) : '',
+        },
       ].concat(meta)}
     />
   )
