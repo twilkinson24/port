@@ -1,10 +1,9 @@
 import React, {useState} from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import parse from "html-react-parser"
 import DarkModeToggle from "../utils/DarkModeToggle"
-import { some } from "lodash"
 
 const SiteHeader = () => {
   const {
