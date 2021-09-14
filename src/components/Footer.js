@@ -40,9 +40,9 @@ const Footer = () => {
         </nav>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">Gatsby</a>
         {` `}
-        And <a href="https://wordpress.org/">WordPress</a>
+        And <a href="https://wordpress.org/" target="_blank" rel="noreferrer">WordPress</a>
       </footer>
   )
 }

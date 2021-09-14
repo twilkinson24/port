@@ -36,7 +36,7 @@ const Bio = () => {
   return (
     <div className="bio">
       {avatarUrl && (
-        <Link to="/about/" className="no-decoration mx-auto">
+        <Link to="/about/" className="no-decoration mx-auto bio-avatar-link">
           <img
             alt={authorName}
             className="bio-avatar"

@@ -212,7 +212,6 @@ ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  padding-left: 20px;
   margin-bottom: var(--spacing-8);
   list-style-position: outside;
   list-style-image: none;
@@ -222,8 +221,9 @@ ul {
   list-style-type: none;
   position: relative;
 }
-ul li {
+body ul li {
   position: relative;
+  padding-left: 15px;
 }
 ul li:after {
   content: '✓';
@@ -232,7 +232,7 @@ ul li:after {
   font-size: 12px;
   position: absolute;
   top: 3px;
-  left: -15px;
+  left: 0;
 }
 
 ul li,
@@ -250,7 +250,7 @@ li *:last-child {
 }
 
 li > ul {
-  margin-left: var(--spacing-8);
+  margin-left: var(--spacing-4);
   margin-top: calc(var(--spacing-8) / 2);
 }
 
@@ -670,6 +670,12 @@ a.no-decoration:hover:after {
   width: 50%;
 }
 
+article.blog-post,
+article.landing-page {
+  min-height: 70vh;
+}
+
+
 /* Homepage */
 .landing-page .page-title {
   padding-right: 1rem;
@@ -692,7 +698,9 @@ a.no-decoration:hover:after {
     margin: 8% 0;
   }
 }
-
+body ul.tools-list { 
+  padding-left: 0;
+}
 .tools-list > li {
   font-weight: 600;
 }
@@ -708,7 +716,7 @@ a.no-decoration:hover:after {
   justify-content: flex-start;
 }
 .tools-list ul li {
-  width: 50%;
+  width: 45%;
   max-width: 300px;
 }
 @media screen and (max-width: 1024px) {
@@ -719,8 +727,9 @@ a.no-decoration:hover:after {
 @media screen and (max-width: 600px) {
   .tools-list li,
   .tools-list .w-50 {
-    width: 100%;
     max-width: 100%;
+    padding-left: 10px;
+    width: 100%;
   }
 }
 
@@ -754,7 +763,11 @@ footer.primary-footer .social-media-icons li:after {
   content: none;
 }
 footer.primary-footer .social-media-icons li {
+  padding: 0;
   margin: 0 3%;
+}
+footer.primary-footer .social-media-icons li:first-child {
+  margin-left: 0;
 }
 footer.primary-footer .social-media-icons li img {
   height: auto;
@@ -1025,6 +1038,9 @@ footer.primary-footer .social-media-icons li a:after {
   h2 {
     font-size: var(--fontSize-4);
   }
+  h3 {
+    font-size: var(--fontSize-3);
+  }
   /* header */
   .global-header .site-title {
     order: 1;
@@ -1052,6 +1068,9 @@ footer.primary-footer .social-media-icons li a:after {
   }
   footer.primary-footer {
     text-align: left;
+  }
+  .bio .bio-avatar-link {
+    margin-left: 0;
   }
 }
 
